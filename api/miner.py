@@ -13,7 +13,8 @@ import string
 from collections import defaultdict
 
 punctuation = list(string.punctuation)
-stopwords_list = stopwords.words('english') + stopwords.words('spanish') + punctuation + ['rt', 'via', '…', '...']
+stopwords_list = stopwords.words('english') + stopwords.words('spanish') + punctuation \
+                    + ['rt', 'via', '…', '...', '️', 'ヽ', '、', '｀' ]
 
 def select_most_frequent(number, include):
     """
